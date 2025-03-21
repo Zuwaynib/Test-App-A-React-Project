@@ -1,17 +1,14 @@
-import { useState } from "react";
+import "./App.css";
+import Card from "./components/Card";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div>
-        <button onClick={() => setCount((prevCount) => prevCount + 50)}>
-          Count is {count}
-        </button>
-      </div>
-    </>
+    <div className="container">
+      <h1>Top 3 activities to do in Lagos</h1>
+      <Card />
+      <Card />
+      <Card />
+    </div>
   );
 }
 
