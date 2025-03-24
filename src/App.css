@@ -26,11 +26,11 @@
   }
   
   .back-btn {
-    left: 10px;
+    left: 20px;
   }
   
   .close-btn {
-    right: 10px;
+    right: 20px;
   }
   
   h2 {
@@ -46,7 +46,7 @@
   .input-group input {
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     border-radius: 5px;
   }
   
@@ -54,20 +54,31 @@
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    margin-bottom: 40px;
+    color: #797777;
   }
-  
+
+  .options a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .options input[type="checkbox"] {
+    margin-right: 5px;
+    border-radius: 0;
+  }
+
   .sign-in-btn, .google-signin {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    border: none;
+    border: 1px solid rgb(206, 240, 206);
     border-radius: 5px;
     cursor: pointer;
   }
   
   .sign-in-btn {
-    background: #008080;
-    color: white;
+    background: transparent;
   }
   
   .google-signin {
@@ -75,11 +86,19 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: 1px solid #ccc;
-    background: white;
+    border: 1px solid rgb(206, 240, 206);
+    background: transparent;
   }
   
   .google-signin img {
     width: 20px;
   }
-  
+
+footer  {
+    text-align: center;
+    margin-top: 40px;
+}
+footer a {
+    color: rgb(120, 230, 120);
+    text-decoration: none;
+}
