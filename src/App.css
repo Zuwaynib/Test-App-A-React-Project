@@ -47,7 +47,7 @@ h2 {
 .input-group input {
   padding: 10px;
   margin-top: 5px;
-  height: 3rem;
+  font-size: 18px;
   border: 1.5px solid #000;
   border-radius: 5px;
 }
@@ -78,10 +78,15 @@ h2 {
   border: 1px solid #83c0b9;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .sign-in-btn {
   background: transparent;
+}
+.sign-in-btn:hover, .google-signin:hover {
+  background: #83c0b9;
+  color: #fff;
 }
 
 .google-signin {

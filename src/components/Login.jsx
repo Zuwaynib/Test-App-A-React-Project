@@ -54,10 +54,6 @@ const Login = () => {
           </button>
 
           <button className="google-signin">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_2015_logo.svg"
-              alt="Google Logo"
-            />
             Or sign in with Google
           </button>
         </form>
