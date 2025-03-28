@@ -61,11 +61,11 @@ const Login = () => {
             Or sign in with Google
           </button>
         </form>
-        <footer>
-          <p>
+    
+          <p class="signup-text"> 
             Don't have an account? <a href="/signup">Sign up</a>
           </p>
-        </footer>
+
       </div>
     </div>
   );
