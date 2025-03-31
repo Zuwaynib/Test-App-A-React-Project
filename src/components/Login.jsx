@@ -15,7 +15,7 @@ const Login = () => {
         <button className="back-btn">←</button>
         <button className="close-btn">✖</button>
 
-        <h2>Log in</h2>
+        <h2 className= "login-text">Log in</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <input

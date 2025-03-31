@@ -1,23 +1,31 @@
 .login-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
-  background-color: rgb(206, 240, 206);
+  justify-content: center;
+  background-image: url("../assets/Hero-section.png");
+  background-color: #83c0b9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 2rem;
 }
 
 .login-box {
   background: #fff;
-  padding: 30px;
+  padding: 3rem;
   border-radius: 10px;
-  max-width: 350px;
+  max-width: 484px;
   width: 80%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
-.back-btn,
-.close-btn {
+.back-btn {
   position: absolute;
   top: 20px;
   font-size: 18px;
@@ -30,23 +38,18 @@
   left: 20px;
 }
 
-.close-btn {
-  right: 20px;
-}
-
-h2 {
+.login-text {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .input-group {
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
 }
 
 .input-group input {
   padding: 10px;
-  margin-top: 5px;
   font-size: 18px;
   border: 1.5px solid #000;
   border-radius: 5px;
@@ -56,7 +59,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  margin-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
   color: #717171;
 }
 
@@ -74,7 +78,6 @@ h2 {
 .google-signin {
   width: 100%;
   padding: 10px;
-  margin-top: 10px;
   border: 1px solid #83c0b9;
   border-radius: 5px;
   cursor: pointer;
@@ -84,7 +87,8 @@ h2 {
 .sign-in-btn {
   background: transparent;
 }
-.sign-in-btn:hover, .google-signin:hover {
+.sign-in-btn:hover,
+.google-signin:hover {
   background: #83c0b9;
   color: #fff;
 }
@@ -106,8 +110,36 @@ h2 {
   text-align: center;
   margin-top: 40px;
 }
+
 .signup-text a {
   color: #83c0b9;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 2rem;
+    max-width: 95%;
+  }
+
+  .input-group input {
+    font-size: 16px;
+  }
+
+  .sign-in-btn,
+  .google-signin {
+    font-size: 16px;
+  }
+  .options {
+    font-size: 12px;
+  }
+
+  .signup-text {
+    margin-top: 30px;
+  }
+  .signup-text a {
+    font-size: 14px;
+  }
 }
