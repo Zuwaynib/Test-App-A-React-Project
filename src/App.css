@@ -1,4 +1,4 @@
-.login-container {
+/* .login-container {
   max-width: 1280px;
   margin: 0 auto;
   width: 100%;
@@ -106,7 +106,7 @@
   width: 20px;
 } */
 
-.signup-text {
+/* .signup-text {
   text-align: center;
   margin-top: 40px;
 }
@@ -118,7 +118,7 @@
 }
 
 /* Mobile responsiveness */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .login-box {
     padding: 2rem;
     max-width: 95%;
@@ -142,4 +142,143 @@
   .signup-text a {
     font-size: 14px;
   }
+}  */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #e6f0ee;
+}
+
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #9fe0b6, #60c0a4);
+  color: white;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+}
+
+.sidebar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 30px;
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-img {
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.dashboard {
+  margin-top: 30px;
+}
+
+.top-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.orders-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.revenue-chart {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Optional toggle switch style for header */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #34d399;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
 }
