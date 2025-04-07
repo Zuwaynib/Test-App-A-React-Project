@@ -155,10 +155,12 @@
 .sidebar {
   width: 220px;
   height: 100vh;
-  background: linear-gradient(to bottom, #9fe0b6, #60c0a4);
+  background: linear-gradient(to bottom, #60c0a4, #9fe0b6);
+  margin: 40px;
   color: white;
   padding: 20px;
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px;
+  position: relative;
 }
 
 .sidebar .logo {
@@ -170,20 +172,26 @@
 .sidebar .icon {
   width: 16px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 20px;
   vertical-align: middle;
   font-size: 18px;
 }
 
-.sidebar ul {
+.sidebar-list {
   list-style: none;
   padding: 0;
+}
+
+.sidebar-list a {
+  text-decoration: none;
+  color: white;
 }
 
 .sidebar li {
   display: flex;
   align-items: center;
   padding: 10px 0;
+  margin-bottom: 15px;
   font-weight: 500;
   cursor: pointer;
 }
@@ -192,6 +200,12 @@
   background: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   padding-left: 8px;
+}
+
+.sidebar-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 80%;
 }
 
 .main-content {
