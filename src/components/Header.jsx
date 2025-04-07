@@ -2,10 +2,10 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="dashboard-header">
       <div>
         <h2>Welcome Pharm Daniel</h2>
-        <p>You have 4 pending orders</p>
+        <p className="header-text">You have 4 pending orders</p>
       </div>
       <div className="header-right">
         <label className="switch">
