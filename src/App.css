@@ -144,14 +144,12 @@
   }
 }  */
 
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background-color: #e6f0ee;
-}
 
 .app-container {
   display: flex;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #e6f0ee;
 }
 
 .sidebar {
@@ -169,14 +167,31 @@ body {
   margin-bottom: 30px;
 }
 
+.sidebar .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
 .sidebar ul {
   list-style: none;
   padding: 0;
 }
 
 .sidebar li {
-  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-weight: 500;
   cursor: pointer;
+}
+
+.sidebar li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding-left: 8px;
 }
 
 .main-content {
