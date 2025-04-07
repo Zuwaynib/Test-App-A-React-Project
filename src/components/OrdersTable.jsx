@@ -14,7 +14,7 @@ const orders = [
         <table>
           <thead>
             <tr>
-              <th>Name</th>
+              <th className="table-head">Name</th>
               <th>Date</th>
               <th>Status</th>
             </tr>

@@ -5,7 +5,7 @@ const RevenueChart = () => {
     <div className="revenue-chart">
       <h3>Total Revenue</h3>
       <p>#300000.5</p>
-      <div className="fake-linechart">[Line chart placeholder]</div>
+      <div className="fake-linechart">Line Chart Placeholder</div>
       <p>6 months trend</p>
     </div>
   );
