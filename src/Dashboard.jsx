@@ -4,10 +4,12 @@ import Header from "./components/Header";
 import DashboardCard from "./components/DashboardCard";
 import OrdersTable from "./components/OrdersTable";
 import RevenueChart from "./components/RevenueChart";
+import { Chart as ChartJS } from "chart.js/auto";
+import { Bar, Doughnut, Line } from "react-chartjs-2";
 
 const Dashboard = () => {
   return (
-    <div className="app-container">
+    <div className="dashboard-container">
       <Sidebar />
       <main className="main-content">
         <Header />
