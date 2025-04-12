@@ -22,7 +22,17 @@ const Dashboard = () => {
           <div className="middle-section">
             <OrdersTable />
           </div>
-          <RevenueChart />
+          <Bar
+            data={{
+              labels: ["A", "B", "C"],
+              datasets: [
+                {
+                  label: "Revenue",
+                  data: [200, 300, 400],
+                },
+              ],
+            }}
+          />
         </div>
       </main>
     </div>
