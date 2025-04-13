@@ -1,14 +1,26 @@
 [
   {
-    "label": "Revenue",
-    "value": 25
+    "label": "SEP",
+    "value": 30
   },
   {
-    "label": "Ads",
-    "value": 450
-  },
-  {
-    "label": "Sales",
+    "label": "OCT",
     "value": 200
+  },
+  {
+    "label": "NOV",
+    "value": 90
+  },
+  {
+    "label": "DEC",
+    "value": 50
+  },
+  {
+    "label": "JAN",
+    "value": 150
+  },
+  {
+    "label": "FEB",
+    "value": 80
   }
 ]

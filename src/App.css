@@ -338,3 +338,11 @@ input:checked + .slider:before {
   border-radius: 12px;
 }
 
+.revenueChart {
+  width: 50%;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+}
