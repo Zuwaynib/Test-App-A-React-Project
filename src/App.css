@@ -160,6 +160,7 @@
 }
 .top-cards {
     display: flex;
+    width: 100%;
     gap: 20px;
 }
 .dashboard {
@@ -339,10 +340,19 @@ input:checked + .slider:before {
 }
 
 .revenueChart {
-  width: 50%;
+  width: 60%;
   height: 200px;
   margin-top: 20px;
   border-radius: 12px;
-  display: flex;
-  align-items: flex-end;
+  background: #60c0a4;
+  padding: 10px 30px 20px 30px;
 }
+.revenueChartWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
