@@ -19,7 +19,7 @@ const DrugsSold = () => {
             {
               label: "",
               data: [500, 400],
-              backgroundColor: ["rgb(8, 134, 99)", "rgb(6, 236, 87)"],
+              backgroundColor: ["rgb(8, 134, 99)", " #34d399"],
               borderWidth: 2,
             },
           ],

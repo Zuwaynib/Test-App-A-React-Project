@@ -15,38 +15,37 @@ defaults.plugins.subtitle.color = "rgb(4, 4, 158)";
 const RevenueChart = () => {
   return (
     <div className="revenueChartWrapper">
-            <div className="revenueChart">
-              <Line
-                data={{
-                  labels: SourceData.map((data) => data.label),
-                  datasets: [
-                    {
-                      label: "Earned",
-                      data: SourceData.map((data) => data.value),
-                      backgroundColor: ["rgb(4, 4, 158)"],
-                      tension: 0.5,
-                      borderColor: "rgb(4, 4, 158)",
-                      pointStyle: false,
-                    },
-                  ],
-                }}
-                options={{
-                  plugins: {
-                    title: {
-                      display: true,
-                      text: "#300000.5",
-                      color: "rgb(6, 6, 126)",
-                    },
-                    subtitle: {
-                      display: true,
-                      text: "Total Revenue",
-                      
-                    },
-                  },
-                }}
-              />
-            </div>
-          </div>
+      <div className="revenueChart">
+        <Line
+          data={{
+            labels: SourceData.map((data) => data.label),
+            datasets: [
+              {
+                label: "Earned",
+                data: SourceData.map((data) => data.value),
+                backgroundColor: ["rgb(4, 4, 158)"],
+                tension: 0.5,
+                borderColor: "rgb(4, 4, 158)",
+                pointStyle: false,
+              },
+            ],
+          }}
+          options={{
+            plugins: {
+              title: {
+                display: true,
+                text: "#300000.5",
+                color: "rgb(6, 6, 126)",
+              },
+              subtitle: {
+                display: true,
+                text: "Total Revenue",
+              },
+            },
+          }}
+        />
+      </div>
+    </div>
   );
 };
 

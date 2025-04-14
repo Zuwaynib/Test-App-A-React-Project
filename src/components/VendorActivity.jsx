@@ -19,7 +19,7 @@ const VendorActivity = () => {
             {
               label: "Traffic",
               data: VendorData.map((data) => data.value),
-              backgroundColor: [" #60c0a4"],
+              backgroundColor: [" #83c0b9"],
               barThickness: 15,
               borderRadius: 10,
               
