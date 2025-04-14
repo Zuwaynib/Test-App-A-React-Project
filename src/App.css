@@ -144,7 +144,6 @@
   }
 }  */
 
-
 /* Dashboard Page Styling*/
 
 /*Dashboard Style*/
@@ -155,16 +154,12 @@
   background-color: #e6f0ee;
 }
 .main-content {
-    padding: 30px;
-    flex-grow: 1;
+  padding: 30px;
+  flex-grow: 1;
 }
-.top-cards {
-    display: flex;
-    width: 100%;
-    gap: 20px;
-}
+
 .dashboard {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 /*Sidebar Style*/
@@ -250,59 +245,60 @@
   margin-left: 15px;
 }
 
-
 /* Optional toggle switch style for header */
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 18px;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 18px;
 }
-  
+
 .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
-  
+
 .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    border-radius: 34px;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
 }
-  
+
 .slider:before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    border-radius: 50%;
-    transition: 0.4s;
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
 }
-  
+
 input:checked + .slider {
-    background-color: #34d399;
+  background-color: #34d399;
 }
-  
+
 input:checked + .slider:before {
-    transform: translateX(16px);
+  transform: translateX(16px);
 }
-  
+
 /*Dashboard Cards*/
-.dashboard-card {
-  background: white;
-  border-radius: 12px;
+.top-cards {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  border: 1px solid #000;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  flex: 1;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /*Orders Table Style*/
@@ -311,6 +307,17 @@ input:checked + .slider:before {
   background: white;
   padding: 20px;
   border-radius: 12px;
+  width: 50%;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+.ordersTableWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .orders-table table {
@@ -340,7 +347,7 @@ input:checked + .slider:before {
 }
 
 .revenueChart {
-  width: 60%;
+  width: 50%;
   height: 200px;
   margin-top: 20px;
   border-radius: 12px;
@@ -354,5 +361,3 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
 }
-
-

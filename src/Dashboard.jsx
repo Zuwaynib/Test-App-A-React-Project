@@ -4,8 +4,9 @@ import Header from "./components/Header";
 import DashboardCard from "./components/DashboardCard";
 import OrdersTable from "./components/OrdersTable";
 import RevenueChart from "./components/RevenueChart";
-import { Chart as ChartJS, defaults } from "chart.js/auto";
-import { Bar, Doughnut } from "react-chartjs-2";
+import DrugsSold from "./components/DrugsSold";
+import VendorActivity from "./components/VendorActivity";
+
 
 
 const Dashboard = () => {
@@ -16,9 +17,9 @@ const Dashboard = () => {
         <Header />
         <div className="dashboard">
           <div className="top-cards">
-            <DashboardCard title="Drugs Sold" value="500" subValue="400" />
-            <DashboardCard title="Vendor Activity" chart />
-            <DashboardCard title="Patients Attended" value="300" />
+            <DrugsSold />
+            <VendorActivity/>
+            <DashboardCard />
           </div>
           <div className="middle-section">
             <OrdersTable />
