@@ -8,7 +8,6 @@ defaults.responsive = true;
 
 defaults.plugins.title.display = true;
 defaults.plugins.title.align = "start";
-defaults.plugins.title.color = "rgb(1, 1, 48)";
 defaults.plugins.title.font.size = 20;
 defaults.plugins.subtitle.align = "start";
 defaults.plugins.subtitle.color = "rgb(4, 4, 158)";
@@ -40,6 +39,7 @@ const RevenueChart = () => {
                     subtitle: {
                       display: true,
                       text: "Total Revenue",
+                      color: "rgb(3, 3, 85)",
                     },
                   },
                 }}

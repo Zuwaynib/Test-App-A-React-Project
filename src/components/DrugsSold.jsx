@@ -7,7 +7,6 @@ defaults.responsive = true;
 
 defaults.plugins.title.display = true;
 defaults.plugins.title.align = "start";
-defaults.plugins.title.color = "rgb(4, 4, 158)";
 defaults.plugins.title.font.size = 20;
 
 const DrugsSold = () => {
@@ -30,6 +29,7 @@ const DrugsSold = () => {
             title: {
               display: true,
               text: "Drugs Sold",
+              color: "rgb(4, 4, 158)",
             },
           },
         }}

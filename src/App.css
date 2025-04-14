@@ -294,9 +294,9 @@ input:checked + .slider:before {
 .top-cards {
   display: flex;
   width: 100%;
-  gap: 20px;
   border: 1px solid #000;
-  justify-content: space-between;
+  gap: 20px;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 20px;
 }
@@ -304,6 +304,13 @@ input:checked + .slider:before {
 .drugs-sold-card {
   padding: 20px;
   background: #60c0a4;
+  height: 200px;
+  border-radius: 12px;
+}
+
+.vendor-activity-card {
+  padding: 20px;
+  background: #fff;
   height: 200px;
   border-radius: 12px;
 }
