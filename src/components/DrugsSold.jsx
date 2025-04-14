@@ -1,27 +1,41 @@
-import React from 'react';
+import React from "react";
 import { Chart as ChartJS, defaults } from "chart.js/auto";
-import { Doughnut } from "react-chartjs-2"; 
+import { Doughnut } from "react-chartjs-2";
+
+defaults.maintainAspectRatio = false;
+defaults.responsive = true;
+
+defaults.plugins.title.display = true;
+defaults.plugins.title.align = "start";
+defaults.plugins.title.color = "rgb(4, 4, 158)";
+defaults.plugins.title.font.size = 20;
 
 const DrugsSold = () => {
   return (
     <div className="drugs-sold-card">
-      <Doughnut data={{
-        labels: "Drugs Sold",
-        datasets: [
+      <Doughnut
+        data={{
+          labels: ["Orders", "Sold"],
+          datasets: [
             {
-                label: "Orders",
-                data: 500,
-                backgroundColor:  "#60c0a4",
+              label: "",
+              data: [500, 400],
+              backgroundColor: ["rgb(8, 134, 99)", "rgb(6, 236, 87)"],
+              borderWidth: 2,
             },
-            {
-                label: "Sold",
-                data: 400,
-                backgroundColor: "#9fe0b6",
-            }
-        ]
-      }} />
+          ],
+        }}
+        options={{
+          plugins: {
+            title: {
+              display: true,
+              text: "Drugs Sold",
+            },
+          },
+        }}
+      />
     </div>
-  )
-}
+  );
+};
 
 export default DrugsSold;

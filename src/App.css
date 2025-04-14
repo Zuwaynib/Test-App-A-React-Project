@@ -301,6 +301,13 @@ input:checked + .slider:before {
   padding: 20px;
 }
 
+.drugs-sold-card {
+  padding: 20px;
+  background: #60c0a4;
+  height: 200px;
+  border-radius: 12px;
+}
+
 /*Orders Table Style*/
 .orders-table {
   margin-top: 30px;
