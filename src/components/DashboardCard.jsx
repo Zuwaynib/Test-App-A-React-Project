@@ -2,10 +2,11 @@ import React from "react";
 
 const DashboardCard = () => {
   return (
-    <div classname="dashboard-card">
+    <div className="dashboard-card">
       <h2>300</h2>
       <p>Patients Attended</p>
-      <input type="month"  />
+      {/* <label for="month">Month</label> */}
+      <input type="month" id="month" name="month" />
     </div>
   );
 };

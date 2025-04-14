@@ -35,11 +35,12 @@ const RevenueChart = () => {
                     title: {
                       display: true,
                       text: "#300000.5",
+                      color: "rgb(6, 6, 126)",
                     },
                     subtitle: {
                       display: true,
                       text: "Total Revenue",
-                      color: "rgb(3, 3, 85)",
+                      
                     },
                   },
                 }}

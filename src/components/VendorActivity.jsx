@@ -31,7 +31,7 @@ const VendorActivity = () => {
             title: {
               display: true,
               text: "Vendor Activity",
-              color: "rgb(3, 3, 85)",
+              color: "rgb(6, 6, 126)",
             },
           },
         }}
