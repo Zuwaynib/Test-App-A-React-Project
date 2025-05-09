@@ -1,11 +1,10 @@
-import "./App.css";
-import Dashboard from "./Dashboard.jsx";
-
+import "./index.css";
+import Jokes from "./components/Jokes";
 
 function App() {
   return (
     <div>
-      <Dashboard />
+      <Jokes />
     </div>
   );
 }
