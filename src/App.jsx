@@ -1,10 +1,10 @@
 import "./index.css";
-import Jokes from "./components/Jokes";
+import Pizzas from "./components/Pizzas";
 
 function App() {
   return (
     <div>
-      <Jokes />
+      <Pizzas />
     </div>
   );
 }

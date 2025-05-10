@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "img": {
+            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "alt": "Focaccia"
+        },
+        "title": "Focaccia",
+        "description": "Bread with Italian olive oil and rosemary"
+    },
+    {
+        "id": 2,
+        "img": {
+            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "alt": "Pizza Margherita"
+        },
+        "title": "Pizza Margherita",
+        "description": "Tomato and mozarella"
+    },
+    {
+        "id": 3,
+        "img": {
+            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "alt": "Pizza Spinaci"
+        },
+        "title": "Pizza Spinaci",
+        "description": "Tomato, mozzarella, spinach, and ricotta cheese"
+    },
+    {
+        "id": 4,
+        "img": {
+            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "alt": "Pizza Funghi"
+        },
+        "title": "Pizza Funghi",
+        "description": "Tomato, mozarella, mushrooms, and onions"
+    },
+    {
+        "id": 5,
+        "img": {
+            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "alt": "Pizza Salamino"
+        },
+        "title": "Pizza Salamino",
+        "description": "Tomato, mozarella, and pepperoni"
+    },
+    {
+        "id": 6,
+        "img": {
+            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "alt": "Pizza Prosciutto"
+        },
+        "title": "Pizza Prosciutto",
+        "description": "Tomato, mozarella, ham, aragula, and burarrata cheese"
+    },
+    {
+        "id": 7,
+        "img": {
+            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "alt": "Pizza Bianca"
+        },
+        "title": "Pizza Bianca",
+        "description": "Mozarella, ricotta, and parmesan cheese"
+    },
+    {
+        "id": 8,
+        "img": {
+            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "alt": "Pizza Capricciosa"
+        },
+        "title": "Pizza Capricciosa",
+        "description": "Tomato, mozzarella, mushrooms, artichokes, and ham"
+    }
+]
