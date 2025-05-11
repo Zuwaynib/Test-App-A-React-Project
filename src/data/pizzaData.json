@@ -6,7 +6,8 @@
             "alt": "Focaccia"
         },
         "name": "Focaccia",
-        "description": "Bread with Italian olive oil and rosemary"
+        "description": "Bread with Italian olive oil and rosemary",
+        "price": "$5.99"
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
             "alt": "Pizza Margherita"
         },
         "name": "Pizza Margherita",
-        "description": "Tomato and mozarella"
+        "description": "Tomato and mozarella",
+        "price": "$4.49"
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
             "alt": "Pizza Spinaci"
         },
         "name": "Pizza Spinaci",
-        "description": "Tomato, mozzarella, spinach, and ricotta cheese"
+        "description": "Tomato, mozzarella, spinach, and ricotta cheese",
+        "price": "$5.99"
     },
     {
         "id": 4,
@@ -33,7 +36,8 @@
             "alt": "Pizza Funghi"
         },
         "name": "Pizza Funghi",
-        "description": "Tomato, mozarella, mushrooms, and onions"
+        "description": "Tomato, mozarella, mushrooms, and onions",
+        "price": "$6.49"
     },
     {
         "id": 5,
@@ -42,7 +46,8 @@
             "alt": "Pizza Salamino"
         },
         "name": "Pizza Salamino",
-        "description": "Tomato, mozarella, and pepperoni"
+        "description": "Tomato, mozarella, and pepperoni",
+        "price": "$4.99"
     },
     {
         "id": 6,
@@ -51,7 +56,8 @@
             "alt": "Pizza Prosciutto"
         },
         "name": "Pizza Prosciutto",
-        "description": "Tomato, mozarella, ham, aragula, and burarrata cheese"
+        "description": "Tomato, mozarella, ham, aragula, and burarrata cheese",
+        "price": "$7.99"
     },
     {
         "id": 7,
@@ -60,7 +66,8 @@
             "alt": "Pizza Bianca"
         },
         "name": "Pizza Bianca",
-        "description": "Mozarella, ricotta, and parmesan cheese"
+        "description": "Mozarella, ricotta, and parmesan cheese",
+        "price": "$5.49"
     },
     {
         "id": 8,
@@ -69,6 +76,7 @@
             "alt": "Pizza Capricciosa"
         },
         "name": "Pizza Capricciosa",
-        "description": "Tomato, mozzarella, mushrooms, artichokes, and ham"
+        "description": "Tomato, mozzarella, mushrooms, artichokes, and ham",
+        "price": "$6.99"
     }
 ]
