@@ -1,4 +1,4 @@
-import "./index.css";
+import "./pizza.css";
 import Pizzas from "./components/Pizzas";
 import Nav from "./components/Nav";
 
