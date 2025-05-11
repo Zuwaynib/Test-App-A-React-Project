@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 body {
   margin: 0;
   background-color: #fff9ed;
@@ -13,7 +14,6 @@ body {
   text-align: center;
 }
 
-/* Header */
 .header {
   font-size: 2.5rem;
   color: #f4c430;
@@ -25,7 +25,6 @@ body {
   font-family: "Courier New", monospace;
 }
 
-/* Menu */
 .menu-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -44,7 +43,6 @@ body {
   color: #555;
 }
 
-/* Menu Grid */
 .menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -53,14 +51,14 @@ body {
 }
 
 .menu-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    text-align: left;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 .menu-item img {
   width: 120px;
@@ -86,4 +84,44 @@ button {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 2rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .menu-title {
+    font-size: 1.25rem;
+  }
+
+  .menu-description {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
 }
