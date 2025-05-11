@@ -2,7 +2,7 @@
     {
         "id": 1,
         "img": {
-            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "src": "/assets/pizza.jpg",
             "alt": "Focaccia"
         },
         "name": "Focaccia",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "img": {
-            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "src": "/assets/pizza.jpg",
             "alt": "Pizza Margherita"
         },
         "name": "Pizza Margherita",
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "img": {
-            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "src": "/assets/pizza.jpg",
             "alt": "Pizza Spinaci"
         },
         "name": "Pizza Spinaci",
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "img": {
-            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "src": "/assets/pizza.jpg",
             "alt": "Pizza Funghi"
         },
         "name": "Pizza Funghi",
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "img": {
-            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "src": "/assets/pizza.jpg",
             "alt": "Pizza Salamino"
         },
         "name": "Pizza Salamino",
@@ -47,7 +47,7 @@
     {
         "id": 6,
         "img": {
-            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "src": "/assets/pizza.jpg",
             "alt": "Pizza Prosciutto"
         },
         "name": "Pizza Prosciutto",
@@ -56,7 +56,7 @@
     {
         "id": 7,
         "img": {
-            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "src": "/assets/pizza.jpg",
             "alt": "Pizza Bianca"
         },
         "name": "Pizza Bianca",
@@ -65,7 +65,7 @@
     {
         "id": 8,
         "img": {
-            "src": "https://images.unsplash.com/photo-1603052875000-4f2b8c3e5a7d",
+            "src": "/assets/pizza.jpg",
             "alt": "Pizza Capricciosa"
         },
         "name": "Pizza Capricciosa",
