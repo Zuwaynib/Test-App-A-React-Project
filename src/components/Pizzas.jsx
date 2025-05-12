@@ -2,6 +2,10 @@ import React from "react";
 import PizzaData from "../data/pizzaData.json";
 
 const Pizzas = () => {
+  const handleClick = () => {
+    console.log("Your order has been placed")
+  }
+
   return (
     <div className="menu">
       {PizzaData.map((pizza) => (
@@ -15,7 +19,7 @@ const Pizzas = () => {
             <h2>{pizza.name}</h2>
             <p>{pizza.description}</p>
             <p>{pizza.price}</p>
-            <button className="order-button">Order Now</button>
+            <button className="order-button" onClick={handleClick}>Order Now</button>
           </div>
         </div>
       ))}
