@@ -86,7 +86,10 @@ button {
   cursor: pointer;
   margin-bottom: 2rem;
   border-radius: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
 }
+
 button:hover {
     background: #f8b328;
 }
