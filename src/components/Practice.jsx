@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 
 const Practice = () => {
-    let [count, setCount] = useState(0);
+    const [count, setCount] = useState(5);
 
     const decreaseCount = () => {
-        setCount(count--);
+        setCount(prevCount => prevCount - 5 );
     }
     const increaseCount = () => {
-        setCount(count++);
+        setCount(prevCount =>  prevCount + 5);
     }
+    
   return (
     <div>
         <h1>Practicing React Use State</h1>
