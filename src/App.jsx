@@ -1,16 +1,26 @@
-import "./pizza.css";
-import Pizzas from "./components/Pizzas";
-import Nav from "./components/Nav";
+// import "./pizza.css";
+// import Pizzas from "./components/Pizzas";
+// import Nav from "./components/Nav";
 
-function App() {
+// function App() {
+//   return (
+//     <div className ="container">
+//       <header>
+//         <Nav />
+//       </header>
+//       <main>
+//         <Pizzas />
+//       </main>
+//     </div>
+//   );
+// }
+
+import Practice from "./components/Practice";
+
+const App = () => {
   return (
-    <div className ="container">
-      <header>
-        <Nav />
-      </header>
-      <main>
-        <Pizzas />
-      </main>
+    <div>
+      <Practice />
     </div>
   );
 }
