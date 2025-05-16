@@ -16,11 +16,11 @@ const Practice = () => {
       <form onSubmit={handleSubmit} className="add-ingredient-form">
         <input
           type="text"
-          placeholder="e.g. Oregano"
+          placeholder="e.g. Cheese"
           aria-label="Add ingredient"
           name="ingredient"
         />
-        <button>Add ingredient</button>
+        <button>Add Ingredient</button>
       </form>
       <ul>
         {ingredients.map((ingredient) => (
