@@ -6,13 +6,17 @@ const Practice = () => {
     lastName: "Doe",
     phone: "+1 (212) 555-1212",
     email: "itsmyrealname@example.com",
-    isFavorite: true
+    isFavorite: false
 })
 
 let starIcon = contact.isFavorite ? "A true Button" : "A False Button";
 
 function toggleFavorite() {
-    // Challenge: re-write it :)
+    setContact((prevContact) => {
+      return {
+        ...prevContact, isFavorite: !prevContact.isFavorite
+      }
+    })
 }
 
 return (
