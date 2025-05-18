@@ -9,14 +9,12 @@ const Practice = () => {
     isFavorite: false
 })
 
-let starIcon = contact.isFavorite ? "A true Button" : "A False Button";
+let starIcon = contact.isFavorite ? "Added to Favorite" : "Add to Favorite";
 
 function toggleFavorite() {
-    setContact((prevContact) => {
-      return {
-        ...prevContact, isFavorite: !prevContact.isFavorite
-      }
-    })
+    setContact((prevContact) => ({
+      ...prevContact, isFavorite: !prevContact.isFavorite
+    }))
 }
 
 return (
