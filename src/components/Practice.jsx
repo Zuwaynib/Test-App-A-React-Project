@@ -2,29 +2,38 @@ import React from "react";
 
 const Practice = () => {
 
-const handleSubmit = (formData) => {
-  const email = formData.get("email");
-  const password = formData.get("password");
-  console.log(email, password);
-}
+  const [ingredients, setIngredients] = React.useState([])
+
+  const ingredientsListItems = ingredients.map(ingredient => (
+      <li key={ingredient}>{ingredient}</li>
+  ))
+  
+  /**
+   * Challenge: use form action instead of onSubmit to
+   * handle the data from the form
+   */
+
+  function handleSubmit(formData) {
+      const newIngredient = formData.get("ingredient")
+      setIngredients(prevIngredients => [...prevIngredients, newIngredient])
+  }
 
   return (
-    <main>
-      <h1>Event Sign Up Form</h1>
-      <form action={handleSubmit}>
-        <label htmlFor="email">Email</label>
-        <input id="email" type="email"  name="email" placeholder="janedoe@gmail.com" />
-        <br />
-        <br />
-
-        <label htmlFor="password">Password</label>
-        <input id="password" name="password" type="password" />
-        <br />
-        <br />
-        <button>Submit</button>
-      </form>
-    </main>
-  );
+      <main>
+          <form action={handleSubmit} className="add-ingredient-form">
+              <input
+                  type="text"
+                  placeholder="e.g. oregano"
+                  aria-label="Add ingredient"
+                  name="ingredient"
+              />
+              <button>Add ingredient</button>
+          </form>
+          <ul>
+              {ingredientsListItems}
+          </ul>
+      </main>
+  )
 };
 
 export default Practice;
