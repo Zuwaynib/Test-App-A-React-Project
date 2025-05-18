@@ -1,33 +1,47 @@
 import React, { useState } from "react";
 
 const Practice = () => {
-  const [ingredients, setIngredients] = useState([]);
+  const [contact, setContact] = useState({
+    firstName: "John",
+    lastName: "Doe",
+    phone: "+1 (212) 555-1212",
+    email: "itsmyrealname@example.com",
+    isFavorite: true
+})
 
-   function handleSubmit(event) {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const newIngredient = formData.get("ingredient");
-    setIngredients(prevIngredients => [...prevIngredients, newIngredient]);
-  };
+let starIcon = contact.isFavorite ? "A true Button" : "A False Button";
 
-  return (
+function toggleFavorite() {
+    // Challenge: re-write it :)
+}
+
+return (
     <main>
-      <form onSubmit={handleSubmit} className="add-ingredient-form">
-        <input
-          type="text"
-          placeholder="e.g. Cheese"
-          aria-label="Add ingredient"
-          name="ingredient"
-        />
-        <button>Add Ingredient</button>
-      </form>
-      <ul>
-        {ingredients.map((ingredient) => (
-          <li key={ingredient}>{ingredient}</li>
-        ))}
-      </ul>
+        <article className="card">
+            <img
+                src="https://randomuser.me/api/portraits"
+                className="avatar"
+                alt="User profile picture of John Doe"
+            />
+            <div className="info">
+                <button
+                    onClick={toggleFavorite}
+                    aria-pressed={contact.isFavorite}
+                    aria-label={contact.isFavorite ? "Remove from favorites" : "Add to favorites"}
+                    className="favorite-button"
+                >
+                   {starIcon}
+                </button>
+                <h2 className="name">
+                    {contact.firstName} {contact.lastName}
+                </h2>
+                <p className="contact">{contact.phone}</p>
+                <p className="contact">{contact.email}</p>
+            </div>
+
+        </article>
     </main>
-  );
+)
 };
 
 export default Practice;
