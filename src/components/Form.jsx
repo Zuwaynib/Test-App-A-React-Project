@@ -2,14 +2,9 @@ import React from "react";
 
 const Form = () => {
   const signUp = (formData) => {
-    const email = formData.get("email");
-    const password = formData.get("password");
-    const employmentStatus = formData.get("employmentStatus");
-    const dietaryRequirements = formData.getAll("dietaryRequirements");
-    console.log(email);
-    console.log(password);
-    console.log(employmentStatus);
-    console.log(dietaryRequirements);
+  const data = Object.fromEntries(formData);
+  const dietaryRequirements = formData.getAll("dietaryRequirements");
+  console.log(data, dietaryRequirements);
   };
 
   return (
