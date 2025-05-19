@@ -5,9 +5,11 @@ const Form = () => {
     const email = formData.get("email");
     const password = formData.get("password");
     const employmentStatus = formData.get("employmentStatus");
+    const dietaryRequirements = formData.getAll("dietaryRequirements");
     console.log(email);
     console.log(password);
     console.log(employmentStatus);
+    console.log(dietaryRequirements);
   };
 
   return (
@@ -45,12 +47,28 @@ const Form = () => {
             Unemployed
           </label>
           <label>
-            <input type="radio" name="employmentStatus" value="part-time"/>
+            <input type="radio" name="employmentStatus" defaultChecked={true} value="part-time"/>
             Part-time
           </label>
           <label>
             <input type="radio" name="employmentStatus" value="full-time"/>
             Full-time
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Dietary Requirements:</legend>
+          <label>
+            <input type="checkbox" name="dietaryRequirements" value="vegan"/>
+            Vegan
+          </label>
+          <label>
+            <input type="checkbox" name="dietaryRequirements" defaultChecked={true} value="gluten-free"/>
+            Gluten-free
+          </label>
+          <label>
+            <input type="checkbox" name="dietaryRequirements" value="lactose-intolerant"/>
+            Lactose-intolerant
           </label>
         </fieldset>
 
