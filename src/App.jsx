@@ -16,11 +16,12 @@
 // }
 
 import Practice from "./components/Practice";
+import Form from "./components/Form";
 
 const App = () => {
   return (
     <div>
-      <Practice />
+      <Form />
     </div>
   );
 }
