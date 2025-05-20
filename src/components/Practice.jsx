@@ -14,7 +14,7 @@ const Practice = () => {
 
   return (
     <main>
-      <form action={addIngredient} className="add-ingredient-form">
+      <form action={addIngredient}>
         <input
           type="text"
           placeholder="e.g. oregano"
@@ -23,19 +23,19 @@ const Practice = () => {
         />
         <button>Add ingredient</button>
       </form>
-      <section>
-        <h2>Ingredients on hand:</h2>
-        <ul className="ingredients-list" aria-live="polite">
-          {ingredientsListItems}
-        </ul>
-        <div className="get-recipe-container">
+      {ingredients.length > 0 && (
+        <section>
+          <h2>Ingredients on hand:</h2>
+          <ul aria-live="polite">{ingredientsListItems}</ul>
           <div>
-            <h3>Ready for a recipe?</h3>
-            <p>Generate a recipe from your list of ingredients.</p>
+            <div>
+              <h3>Ready for a recipe?</h3>
+              <p>Generate a recipe from your list of ingredients.</p>
+            </div>
+            <button>Get a recipe</button>
           </div>
-          <button>Get a recipe</button>
-        </div>
-      </section>
+        </section>
+      )}
     </main>
   );
 };
