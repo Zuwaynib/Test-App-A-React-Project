@@ -27,13 +27,15 @@ const Practice = () => {
         <section>
           <h2>Ingredients on hand:</h2>
           <ul aria-live="polite">{ingredientsListItems}</ul>
-          <div>
+          {ingredients.length > 3 && (
             <div>
-              <h3>Ready for a recipe?</h3>
-              <p>Generate a recipe from your list of ingredients.</p>
+              <div>
+                <h3>Ready for a recipe?</h3>
+                <p>Generate a recipe from your list of ingredients.</p>
+              </div>
+              <button>Get a recipe</button>
             </div>
-            <button>Get a recipe</button>
-          </div>
+          )}
         </section>
       )}
     </main>
