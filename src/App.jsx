@@ -18,12 +18,13 @@
 import { useState } from "react";
 import Practice from "./components/Practice";
 import Form from "./components/Form";
-import padsData from "./components/pads";
+import soundPad from "./components/pads";
+import Pad from "./components/Pad";
 
-const App = () => {
-  const [pads, setPads] = useState(padsData);
+const App = ({ darkMode }) => {
+  const [pads, setPads] = useState(soundPad);
   const padElement = pads.map((pad) => {
-    return <button key={pad.id}>{pad.id}</button>;
+    return <Pad  key={pad.id} color={pad.color} />;
   });
 
   return (
