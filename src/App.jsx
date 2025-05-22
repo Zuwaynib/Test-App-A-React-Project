@@ -21,10 +21,10 @@ import Form from "./components/Form";
 import soundPad from "./components/pads";
 import Pad from "./components/Pad";
 
-const App = ({ darkMode }) => {
+const App = () => {
   const [pads, setPads] = useState(soundPad);
   const padElement = pads.map((pad) => {
-    return <Pad  key={pad.id} color={pad.color} />;
+    return <Pad  key={pad.id} color={pad.color} on={pad.on}/>;
   });
 
   return (
