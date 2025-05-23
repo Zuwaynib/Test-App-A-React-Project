@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <main>
-      <div className="pad-container">{padElement}</div>
+      <div>{padElement}</div>
     </main>
   );
 };
