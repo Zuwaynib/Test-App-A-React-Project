@@ -24,7 +24,7 @@ import Pad from "./components/Pad";
 const App = () => {
   const [pads, setPads] = useState(soundPad);
   const padElement = pads.map((pad) => {
-    return <Pad  key={pad.id} color={pad.color} on={pad.on}/>;
+    return <Pad  key={pad.id} color={pad.color}/>;
   });
 
   return (
