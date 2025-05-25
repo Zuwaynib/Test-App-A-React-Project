@@ -23,13 +23,14 @@ import Pad from "./components/Pad";
 
 const App = () => {
   const [pads, setPads] = useState(soundPad);
-  const padElement = pads.map((pad) => {
-    return <Pad  key={pad.id} color={pad.color}/>;
-  });
 
   return (
     <main>
-      <div>{padElement}</div>
+      <div>
+        {pads.map((pad) => {
+          return <Pad key={pad.id} color={pad.color} />;
+        })}
+      </div>
     </main>
   );
 };
