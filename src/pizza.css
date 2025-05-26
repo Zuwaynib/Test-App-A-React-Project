@@ -94,6 +94,7 @@ button:hover {
     background: #f8b328;
 }
 
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .container {
