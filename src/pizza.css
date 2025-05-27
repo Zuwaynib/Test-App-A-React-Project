@@ -95,7 +95,7 @@ button:hover {
 }
 
 
-/* Mobile responsiveness */
+/* Mobile screen responsiveness */
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
