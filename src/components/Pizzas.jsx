@@ -3,7 +3,7 @@ import PizzaData from "../data/pizzaData.json";
 
 const Pizzas = () => {
   const handleClick = () => {
-    console.log("Your order has been placed")
+    alert("Your order has been placed")
   }
 
   return (
