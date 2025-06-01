@@ -189,7 +189,7 @@ input:checked + .slider:before {
 }
 
 .dashboard-card h2 {
-  color: rgb(3, 3, 85);
+  color: rgb(2, 2, 105);
   margin: 0;
 }
 
