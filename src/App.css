@@ -21,7 +21,7 @@
   height: 100vh;
   background: linear-gradient(to bottom, #83c0b9, #34d399);
   margin: 20px;
-  color: white;
+  color: #fff;
   padding: 20px;
   border-radius: 20px;
   position: relative;
@@ -58,7 +58,7 @@
 
 .sidebar-list a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   display: flex;
 }
 
@@ -141,7 +141,7 @@
   width: 14px;
   left: 2px;
   bottom: 2px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 50%;
   transition: 0.4s;
 }
@@ -194,7 +194,7 @@ input:checked + .slider:before {
 }
 
 .dashboard-card p {
-  color: #83c0b9;
+  color: #3fdbc9;
   margin-bottom: 10px;
 }
 
@@ -255,7 +255,7 @@ input:checked + .slider:before {
 /*Revenue Chart Style*/
 .revenue-chart {
   margin-top: 30px;
-  background: white;
+  background: #fff;
   padding: 20px;
   border-radius: 12px;
 }
